@@ -46,6 +46,8 @@ FROM ts_data_staging
 ORDER BY date;
 ```
 
+![Daily Trading Range](/Assets/01_daily_trading_range.png)
+
 Here's the breakdown of Tesla’s daily trading range:
 
 - Most daily trading ranges fall between 0.10 and 0.50, indicating that Tesla’s price generally moved within a predictable band during this period.
