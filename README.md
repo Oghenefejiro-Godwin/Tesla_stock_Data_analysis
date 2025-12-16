@@ -191,6 +191,11 @@ WHERE close < sma_200
 ORDER BY date DESC
 LIMIT 1;
 ```
+
+| days_above_50_sma | pct_time_above_50_sma | date | close | sma_200 |
+| :----------: | :----------: | :----------: | :----------: | :----------: | 
+| 2230 | 57.53 | 2025-09-02 | 329.36 | 329.94 |
+
 **Breakdown / Insights:**
 
 - **Days Above 50-day SMA: 2,230**
@@ -200,12 +205,11 @@ LIMIT 1;
 Tesla closed above its 50-day SMA 57.53% of the time, showing consistent short-term bullish momentum.
 
 - **Last Close Below 200-day SMA:**
+    - *Date:* September 2, 2025
 
-- - *Date:* September 2, 2025
+    - *Close:* $329.36
 
-- - *Close:* $329.36
-
-- - *200-day SMA:* $329.94
+    - *200-day SMA:* $329.94
 
 This indicates that Tesla has mostly stayed above its 200-day SMA, suggesting a strong long-term bullish trend, with only occasional dips below this long-term average.
 
@@ -296,6 +300,11 @@ SELECT
 FROM daily_returns
 WHERE prev_close IS NOT NULL;
 ```
+
+| avg_return_on_open_up_days |avg_return_on_open_down_days |
+| :-------------------: | :-------------------: |
+| 1.40 | -1.29 |
+
 
 **Breakdown / Insights:**
 
